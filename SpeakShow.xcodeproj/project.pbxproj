@@ -28,6 +28,7 @@
 		1FA06E5E1BF19E26009BA165 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA06E5A1BF19E26009BA165 /* Lato-Light.ttf */; };
 		1FA06E5F1BF19E26009BA165 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA06E5B1BF19E26009BA165 /* Lato-Thin.ttf */; };
 		1FA06E611BF1A0E5009BA165 /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA06E601BF1A0E5009BA165 /* settings-icon.png */; };
+		9DB734BA1FA748397A88C943 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34702C92791B4AAA1406311B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,9 @@
 		1FA06E5A1BF19E26009BA165 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "Assets/Fonts/Lato/Lato-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		1FA06E5B1BF19E26009BA165 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "Assets/Fonts/Lato/Lato-Thin.ttf"; sourceTree = SOURCE_ROOT; };
 		1FA06E601BF1A0E5009BA165 /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-icon.png"; path = "Assets/settings-icon.png"; sourceTree = SOURCE_ROOT; };
+		34702C92791B4AAA1406311B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D627ED7C4ED6AC9905E906 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9B0BC992B4388D94BFEE7202 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB734BA1FA748397A88C943 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D9EF21EE232A42FAC099A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B0BC992B4388D94BFEE7202 /* Pods.debug.xcconfig */,
+				76D627ED7C4ED6AC9905E906 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1FA06DD81BF1942C009BA165 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +116,8 @@
 				1FA06DE31BF1942C009BA165 /* SpeakShow */,
 				1FA06DFD1BF1942C009BA165 /* SpeakShowTests */,
 				1FA06DE21BF1942C009BA165 /* Products */,
+				1D9EF21EE232A42FAC099A69 /* Pods */,
+				93D31C4BF1E2FA29F0438BEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +224,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		93D31C4BF1E2FA29F0438BEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34702C92791B4AAA1406311B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA06E041BF1942C009BA165 /* Build configuration list for PBXNativeTarget "SpeakShow" */;
 			buildPhases = (
+				AD59863E97F92703F8ED7257 /* Check Pods Manifest.lock */,
 				1FA06DDD1BF1942C009BA165 /* Sources */,
 				1FA06DDE1BF1942C009BA165 /* Frameworks */,
 				1FA06DDF1BF1942C009BA165 /* Resources */,
+				00B0BB6977737BF94004C66C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,6 +335,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00B0BB6977737BF94004C66C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD59863E97F92703F8ED7257 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FA06DDD1BF1942C009BA165 /* Sources */ = {
@@ -450,6 +509,7 @@
 		};
 		1FA06E051BF1942C009BA165 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0BC992B4388D94BFEE7202 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpeakShow/Info.plist;
@@ -460,6 +520,7 @@
 		};
 		1FA06E061BF1942C009BA165 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D627ED7C4ED6AC9905E906 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SpeakShow/Info.plist;
@@ -521,6 +582,7 @@
 				1FA06E061BF1942C009BA165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FA06E071BF1942C009BA165 /* Build configuration list for PBXNativeTarget "SpeakShowTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +591,7 @@
 				1FA06E091BF1942C009BA165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
