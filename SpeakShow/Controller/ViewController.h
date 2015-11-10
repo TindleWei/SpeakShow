@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class EBMenuItem;
+
 @interface ViewController : UIViewController
 
+@property (nonatomic) EBMenuItem *menuItem;
 
 @end
 
