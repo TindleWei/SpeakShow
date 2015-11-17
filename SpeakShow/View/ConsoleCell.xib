@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ConsoleCell" selectionStyle="default" indentationWidth="10" rowHeight="86" id="V0b-9G-h0K" customClass="ConsoleCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V0b-9G-h0K" id="WUe-b3-yoY">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="onDrag" text="Lorem ipsum " translatesAutoresizingMaskIntoConstraints="NO" id="XyO-9H-1xZ">
+                        <rect key="frame" x="8" y="8" width="384" height="26.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="384" id="6DX-L9-4RM"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="83.5" id="d92-z9-ueH"/>
+                            <constraint firstAttribute="width" secondItem="XyO-9H-1xZ" secondAttribute="height" multiplier="192:13" id="sJz-Zn-3P1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="d92-z9-ueH"/>
+                                <exclude reference="sJz-Zn-3P1"/>
+                            </mask>
+                        </variation>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="XyO-9H-1xZ" secondAttribute="centerY" id="0TG-SL-XoR"/>
+                    <constraint firstItem="XyO-9H-1xZ" firstAttribute="leading" secondItem="WUe-b3-yoY" secondAttribute="leadingMargin" id="41y-eI-EaY"/>
+                    <constraint firstAttribute="centerY" secondItem="XyO-9H-1xZ" secondAttribute="centerY" id="7oZ-JU-pMT"/>
+                    <constraint firstItem="XyO-9H-1xZ" firstAttribute="top" secondItem="WUe-b3-yoY" secondAttribute="topMargin" id="BBa-eE-PVV"/>
+                    <constraint firstItem="XyO-9H-1xZ" firstAttribute="trailing" secondItem="WUe-b3-yoY" secondAttribute="trailingMargin" id="KwB-PQ-y1s"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XyO-9H-1xZ" secondAttribute="bottom" id="RB0-FG-b7g"/>
+                    <constraint firstItem="XyO-9H-1xZ" firstAttribute="top" secondItem="WUe-b3-yoY" secondAttribute="topMargin" id="YiJ-x2-417"/>
+                    <constraint firstAttribute="centerY" secondItem="XyO-9H-1xZ" secondAttribute="centerY" id="Yl1-ti-JYg"/>
+                    <constraint firstItem="XyO-9H-1xZ" firstAttribute="leading" secondItem="WUe-b3-yoY" secondAttribute="leadingMargin" id="fjF-6U-tdh"/>
+                    <constraint firstItem="XyO-9H-1xZ" firstAttribute="trailing" secondItem="WUe-b3-yoY" secondAttribute="trailingMargin" id="r2B-iv-N8z"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0TG-SL-XoR"/>
+                        <exclude reference="KwB-PQ-y1s"/>
+                        <exclude reference="RB0-FG-b7g"/>
+                        <exclude reference="YiJ-x2-417"/>
+                        <exclude reference="Yl1-ti-JYg"/>
+                        <exclude reference="fjF-6U-tdh"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="XyO-9H-1xZ" id="1A7-TR-dQc"/>
+            </connections>
+            <point key="canvasLocation" x="291" y="287"/>
+        </tableViewCell>
+    </objects>
+</document>

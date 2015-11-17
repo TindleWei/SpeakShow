@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 @class EBMenuItem;
 
-@interface ViewController : UIViewController
+@interface MainViewController : BaseViewController
 
 @property (nonatomic) EBMenuItem *menuItem;
 

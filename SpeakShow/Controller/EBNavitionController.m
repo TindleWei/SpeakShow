@@ -10,8 +10,9 @@
 #import "EBMenuController.h"
 #import "EBMenuItem.h"
 #import "UIColor+FlatColors.h"
-#import "PoliticsViewController.h"
-#import "ViewController.h"
+#import "InitialViewController.h"
+#import "SpeakViewController.h"
+#import "MainViewController.h"
 
 @interface EBNavitionController ()
 
@@ -29,21 +30,30 @@
 	
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 	
-	EBMenuItem *politics = [EBMenuItem initWithTitle:@"Politics" withColourScheme:[UIColor flatEmeraldColor]];
+	EBMenuItem *initialItem = [EBMenuItem initWithTitle:@"Initial" withColourScheme:[UIColor flatEmeraldColor]];
+    
+    EBMenuItem *speakItem = [EBMenuItem initWithTitle:@"Speak" withColourScheme:[UIColor flatAlizarinColor]];
 	
 	UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 	
-	PoliticsViewController *politicsInitialView = [storyBoard instantiateViewControllerWithIdentifier:@"Politics"];
-	politicsInitialView.menuItem = politics;
+	InitialViewController *politicsInitialView = [storyBoard instantiateViewControllerWithIdentifier:@"Initial"];
+	politicsInitialView.menuItem = initialItem;
 	self.viewControllers = @[politicsInitialView];
 
-	politics.completionBlock = ^{
+	initialItem.completionBlock = ^{
 		
 		self.viewControllers = @[politicsInitialView];
 	};
-
+    
+    __weak typeof(EBMenuItem) *weakCulture = speakItem;
+    speakItem.completionBlock = ^{
+        
+        SpeakViewController *culture = [storyBoard instantiateViewControllerWithIdentifier:@"Speaker"];
+        culture.menuItem = weakCulture;
+        self.viewControllers = @[culture];
+    };
 	
-	NSArray *menuItems = @[politics];
+	NSArray *menuItems = @[initialItem, speakItem];
     self.menu = [[EBMenuController alloc] initWithMenuItems:menuItems forViewController:self];
 }
 

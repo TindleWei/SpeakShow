@@ -16,9 +16,9 @@
 		1FA06E161BF19843009BA165 /* EBMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E131BF19843009BA165 /* EBMenuController.m */; };
 		1FA06E171BF19843009BA165 /* EBMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E151BF19843009BA165 /* EBMenuItem.m */; };
 		1FA06E1D1BF19AA9009BA165 /* EBNavitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E1A1BF19AA9009BA165 /* EBNavitionController.m */; };
-		1FA06E1E1BF19AA9009BA165 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E1C1BF19AA9009BA165 /* ViewController.m */; };
+		1FA06E1E1BF19AA9009BA165 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E1C1BF19AA9009BA165 /* MainViewController.m */; };
 		1FA06E221BF19ADA009BA165 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E211BF19ADA009BA165 /* UIColor+FlatColors.m */; };
-		1FA06E251BF19BF2009BA165 /* PoliticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E241BF19BF2009BA165 /* PoliticsViewController.m */; };
+		1FA06E251BF19BF2009BA165 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E241BF19BF2009BA165 /* InitialViewController.m */; };
 		1FA06E2D1BF19CEC009BA165 /* EBHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E281BF19CEC009BA165 /* EBHeaderCollectionReusableView.m */; };
 		1FA06E2E1BF19CEC009BA165 /* EBHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA06E291BF19CEC009BA165 /* EBHeaderCollectionReusableView.xib */; };
 		1FA06E2F1BF19CEC009BA165 /* EBMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA06E2B1BF19CEC009BA165 /* EBMenuCollectionViewCell.m */; };
@@ -28,6 +28,10 @@
 		1FA06E5E1BF19E26009BA165 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA06E5A1BF19E26009BA165 /* Lato-Light.ttf */; };
 		1FA06E5F1BF19E26009BA165 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FA06E5B1BF19E26009BA165 /* Lato-Thin.ttf */; };
 		1FA06E611BF1A0E5009BA165 /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA06E601BF1A0E5009BA165 /* settings-icon.png */; };
+		1FF17B041BF1D05500A1E60D /* SpeakViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF17B021BF1D05500A1E60D /* SpeakViewController.m */; };
+		1FF17B091BF1D41E00A1E60D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF17B081BF1D41E00A1E60D /* BaseViewController.m */; };
+		1FF17B0D1BF1DF0D00A1E60D /* ConsoleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF17B0A1BF1DF0D00A1E60D /* ConsoleCell.xib */; };
+		1FF17B0E1BF1DF0D00A1E60D /* ConsoleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF17B0B1BF1DF0D00A1E60D /* ConsoleCell.m */; };
 		9DB734BA1FA748397A88C943 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34702C92791B4AAA1406311B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,12 +63,12 @@
 		1FA06E151BF19843009BA165 /* EBMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBMenuItem.m; sourceTree = "<group>"; };
 		1FA06E191BF19AA9009BA165 /* EBNavitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNavitionController.h; sourceTree = "<group>"; };
 		1FA06E1A1BF19AA9009BA165 /* EBNavitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNavitionController.m; sourceTree = "<group>"; };
-		1FA06E1B1BF19AA9009BA165 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1FA06E1C1BF19AA9009BA165 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1FA06E1B1BF19AA9009BA165 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1FA06E1C1BF19AA9009BA165 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1FA06E201BF19ADA009BA165 /* UIColor+FlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors.h"; sourceTree = "<group>"; };
 		1FA06E211BF19ADA009BA165 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors.m"; sourceTree = "<group>"; };
-		1FA06E231BF19BF2009BA165 /* PoliticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoliticsViewController.h; sourceTree = "<group>"; };
-		1FA06E241BF19BF2009BA165 /* PoliticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoliticsViewController.m; sourceTree = "<group>"; };
+		1FA06E231BF19BF2009BA165 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		1FA06E241BF19BF2009BA165 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		1FA06E271BF19CEC009BA165 /* EBHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBHeaderCollectionReusableView.h; sourceTree = "<group>"; };
 		1FA06E281BF19CEC009BA165 /* EBHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBHeaderCollectionReusableView.m; sourceTree = "<group>"; };
 		1FA06E291BF19CEC009BA165 /* EBHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
@@ -76,6 +80,13 @@
 		1FA06E5A1BF19E26009BA165 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "Assets/Fonts/Lato/Lato-Light.ttf"; sourceTree = SOURCE_ROOT; };
 		1FA06E5B1BF19E26009BA165 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Thin.ttf"; path = "Assets/Fonts/Lato/Lato-Thin.ttf"; sourceTree = SOURCE_ROOT; };
 		1FA06E601BF1A0E5009BA165 /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-icon.png"; path = "Assets/settings-icon.png"; sourceTree = SOURCE_ROOT; };
+		1FF17B021BF1D05500A1E60D /* SpeakViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakViewController.m; sourceTree = "<group>"; };
+		1FF17B031BF1D05500A1E60D /* SpeakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakViewController.h; sourceTree = "<group>"; };
+		1FF17B071BF1D41E00A1E60D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1FF17B081BF1D41E00A1E60D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1FF17B0A1BF1DF0D00A1E60D /* ConsoleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsoleCell.xib; sourceTree = "<group>"; };
+		1FF17B0B1BF1DF0D00A1E60D /* ConsoleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsoleCell.m; sourceTree = "<group>"; };
+		1FF17B0C1BF1DF0D00A1E60D /* ConsoleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleCell.h; sourceTree = "<group>"; };
 		34702C92791B4AAA1406311B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D627ED7C4ED6AC9905E906 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9B0BC992B4388D94BFEE7202 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,11 +160,8 @@
 		1FA06DE41BF1942C009BA165 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1FA06E601BF1A0E5009BA165 /* settings-icon.png */,
-				1FA06E581BF19E26009BA165 /* Lato-Black.ttf */,
-				1FA06E591BF19E26009BA165 /* Lato-Heavy.ttf */,
-				1FA06E5A1BF19E26009BA165 /* Lato-Light.ttf */,
-				1FA06E5B1BF19E26009BA165 /* Lato-Thin.ttf */,
+				1FF17B061BF1D3BB00A1E60D /* font */,
+				1FF17B051BF1D3A400A1E60D /* image */,
 				1FA06DE51BF1942C009BA165 /* Info.plist */,
 				1FA06DE61BF1942C009BA165 /* main.m */,
 			);
@@ -192,12 +200,16 @@
 		1FA06E181BF19AA9009BA165 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1FA06E231BF19BF2009BA165 /* PoliticsViewController.h */,
-				1FA06E241BF19BF2009BA165 /* PoliticsViewController.m */,
+				1FF17B031BF1D05500A1E60D /* SpeakViewController.h */,
+				1FF17B021BF1D05500A1E60D /* SpeakViewController.m */,
+				1FA06E231BF19BF2009BA165 /* InitialViewController.h */,
+				1FA06E241BF19BF2009BA165 /* InitialViewController.m */,
+				1FA06E1B1BF19AA9009BA165 /* MainViewController.h */,
+				1FA06E1C1BF19AA9009BA165 /* MainViewController.m */,
 				1FA06E191BF19AA9009BA165 /* EBNavitionController.h */,
 				1FA06E1A1BF19AA9009BA165 /* EBNavitionController.m */,
-				1FA06E1B1BF19AA9009BA165 /* ViewController.h */,
-				1FA06E1C1BF19AA9009BA165 /* ViewController.m */,
+				1FF17B071BF1D41E00A1E60D /* BaseViewController.h */,
+				1FF17B081BF1D41E00A1E60D /* BaseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -214,6 +226,9 @@
 		1FA06E261BF19CEC009BA165 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FF17B0A1BF1DF0D00A1E60D /* ConsoleCell.xib */,
+				1FF17B0B1BF1DF0D00A1E60D /* ConsoleCell.m */,
+				1FF17B0C1BF1DF0D00A1E60D /* ConsoleCell.h */,
 				1FA06E271BF19CEC009BA165 /* EBHeaderCollectionReusableView.h */,
 				1FA06E281BF19CEC009BA165 /* EBHeaderCollectionReusableView.m */,
 				1FA06E291BF19CEC009BA165 /* EBHeaderCollectionReusableView.xib */,
@@ -222,6 +237,25 @@
 				1FA06E2C1BF19CEC009BA165 /* EBMenuCollectionViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1FF17B051BF1D3A400A1E60D /* image */ = {
+			isa = PBXGroup;
+			children = (
+				1FA06E601BF1A0E5009BA165 /* settings-icon.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		1FF17B061BF1D3BB00A1E60D /* font */ = {
+			isa = PBXGroup;
+			children = (
+				1FA06E581BF19E26009BA165 /* Lato-Black.ttf */,
+				1FA06E591BF19E26009BA165 /* Lato-Heavy.ttf */,
+				1FA06E5A1BF19E26009BA165 /* Lato-Light.ttf */,
+				1FA06E5B1BF19E26009BA165 /* Lato-Thin.ttf */,
+			);
+			name = font;
 			sourceTree = "<group>";
 		};
 		93D31C4BF1E2FA29F0438BEB /* Frameworks */ = {
@@ -319,6 +353,7 @@
 				1FA06DF01BF1942C009BA165 /* Main.storyboard in Resources */,
 				1FA06E611BF1A0E5009BA165 /* settings-icon.png in Resources */,
 				1FA06E2E1BF19CEC009BA165 /* EBHeaderCollectionReusableView.xib in Resources */,
+				1FF17B0D1BF1DF0D00A1E60D /* ConsoleCell.xib in Resources */,
 				1FA06DF51BF1942C009BA165 /* LaunchScreen.xib in Resources */,
 				1FA06DF21BF1942C009BA165 /* Images.xcassets in Resources */,
 				1FA06E5C1BF19E26009BA165 /* Lato-Black.ttf in Resources */,
@@ -374,12 +409,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA06E1E1BF19AA9009BA165 /* ViewController.m in Sources */,
-				1FA06E251BF19BF2009BA165 /* PoliticsViewController.m in Sources */,
+				1FA06E1E1BF19AA9009BA165 /* MainViewController.m in Sources */,
+				1FF17B091BF1D41E00A1E60D /* BaseViewController.m in Sources */,
+				1FA06E251BF19BF2009BA165 /* InitialViewController.m in Sources */,
 				1FA06E171BF19843009BA165 /* EBMenuItem.m in Sources */,
 				1FA06E161BF19843009BA165 /* EBMenuController.m in Sources */,
+				1FF17B041BF1D05500A1E60D /* SpeakViewController.m in Sources */,
 				1FA06E2F1BF19CEC009BA165 /* EBMenuCollectionViewCell.m in Sources */,
 				1FA06E221BF19ADA009BA165 /* UIColor+FlatColors.m in Sources */,
+				1FF17B0E1BF1DF0D00A1E60D /* ConsoleCell.m in Sources */,
 				1FA06E1D1BF19AA9009BA165 /* EBNavitionController.m in Sources */,
 				1FA06DEA1BF1942C009BA165 /* AppDelegate.m in Sources */,
 				1FA06E2D1BF19CEC009BA165 /* EBHeaderCollectionReusableView.m in Sources */,

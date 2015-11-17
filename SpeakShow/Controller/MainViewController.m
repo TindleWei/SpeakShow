@@ -6,16 +6,16 @@
 //  Copyright (c) 2015年 tindle. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "EBNavitionController.h"
 #import "EBMenuItem.h"
 #import "UIColor+FlatColors.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
